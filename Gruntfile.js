@@ -1,4 +1,4 @@
-module.exports=function(grunt){
+module.exports = function(grunt){
   grunt.initConfig({
   less: {
     development: {
@@ -6,9 +6,9 @@ module.exports=function(grunt){
               'css/layout.css': 'less/layout.less'           
       }
         
-    },
+    }
   }
 });
-grunt.localNpmTasks('grunt-contrib-less');
+grunt.loadNpmTasks('grunt-contrib-less');
 grunt.registerTask('default',['less']);
 };
